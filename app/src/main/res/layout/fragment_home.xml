@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        tools:context=".Views.HomeFragment">
+
+        <FrameLayout
+            android:id="@+id/frameHomeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/card_2_gradient"
+                android:scaleType="fitXY" />
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/card_2_gradient_square"
+                android:gravity="center"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:fontFamily="@font/font_ig"
+                    android:gravity="center"
+                    android:text="Diriku Apps"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absolutX="89dp"
+                    tools:layout_editor_absolutY="34dp"
+                    tools:layout_editor_absoluteY="12dp" />
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/imgprofil"
+                    android:layout_width="112dp"
+                    android:layout_height="96dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="85dp"
+                    android:src="@drawable/saya"
+                    app:civ_border_color="#262C45"
+                    app:civ_border_width="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/frameHomeLayout" />
+
+                <TextView
+                    android:id="@+id/tvHomeNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Mohammad Iskandar"
+                    android:textAlignment="center"
+                    android:textColor="#262C45"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/imgprofil" />
+
+                <TextView
+                    android:id="@+id/tvHomeBio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Developer | Designer"
+                    android:textAlignment="center"
+                    android:textColor="#30354B"
+                    android:textSize="12dp"
+                    android:textStyle="italic"
+                    app:layout_constraintTop_toBottomOf="@+id/tvHomeNama" />
+
+                <TextView
+                    android:id="@+id/tvHomeDesc"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text=" - Bukan hanya menulis kode yang susah, /nmikirin kodenya juga - "
+                    android:textAlignment="center"
+                    android:textColor="#30354B"
+                    android:textSize="12dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tvHomeBio" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif"
+            android:text="Experience and Interest"
+            android:textAlignment="center" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#CCC" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.dinuscxj.progressbar.CircleProgressBar
+                    android:id="@+id/CircleWeb"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    app:drawBackgroundOutsideProgress="true"
+                    app:line_count="30"
+                    app:line_width="5dp"
+                    app:progress_background_color="@color/colorPrimaryDark"
+                    app:progress_end_color="@color/colorPrimary"
+                    app:progress_shader="sweep"
+                    app:progress_start_color="@color/colorPrimary"
+                    app:progress_start_degree="-90"
+                    app:progress_stroke_cap="round"
+                    app:progress_stroke_width="3dp"
+                    app:progress_text_color="@color/colorPrimaryDark"
+                    app:style="solid_line" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="Web Dev"
+                    android:textColor="#262C45"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="+2 Years Experienced"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.dinuscxj.progressbar.CircleProgressBar
+                    android:id="@+id/CircleAndroid"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    app:drawBackgroundOutsideProgress="true"
+                    app:line_count="30"
+                    app:line_width="5dp"
+                    app:progress_background_color="@color/colorPrimaryDark"
+                    app:progress_end_color="@color/colorPrimary"
+                    app:progress_shader="sweep"
+                    app:progress_start_color="@color/colorPrimary"
+                    app:progress_start_degree="-90"
+                    app:progress_stroke_cap="round"
+                    app:progress_stroke_width="3dp"
+                    app:progress_text_color="@color/colorPrimaryDark"
+                    app:style="solid_line" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="Android Dev"
+                    android:textColor="#262C45"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="+1 Years Experienced"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.dinuscxj.progressbar.CircleProgressBar
+                    android:id="@+id/CircleTechSoft"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    app:drawBackgroundOutsideProgress="true"
+                    app:line_count="30"
+                    app:line_width="5dp"
+                    app:progress_background_color="@color/colorPrimaryDark"
+                    app:progress_end_color="@color/colorPrimary"
+                    app:progress_shader="sweep"
+                    app:progress_start_color="@color/colorPrimary"
+                    app:progress_start_degree="-90"
+                    app:progress_stroke_cap="round"
+                    app:progress_stroke_width="3dp"
+                    app:progress_text_color="@color/colorPrimaryDark"
+                    app:style="solid_line" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="Techical Soft"
+                    android:textColor="#262C45"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="+3 Years Experienced"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.dinuscxj.progressbar.CircleProgressBar
+                    android:id="@+id/CircleUI"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    app:drawBackgroundOutsideProgress="true"
+                    app:line_count="30"
+                    app:line_width="5dp"
+                    app:progress_background_color="@color/colorPrimaryDark"
+                    app:progress_end_color="@color/colorPrimary"
+                    app:progress_shader="sweep"
+                    app:progress_start_color="@color/colorPrimary"
+                    app:progress_start_degree="-90"
+                    app:progress_stroke_cap="round"
+                    app:progress_stroke_width="3dp"
+                    app:progress_text_color="@color/colorPrimaryDark"
+                    app:style="solid_line" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="Photoshop"
+                    android:textColor="#262C45"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="+3 Years Experienced"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
