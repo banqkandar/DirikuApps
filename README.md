@@ -9,7 +9,7 @@ defaultConfig {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-    }
+}
     
 <h2>Library</h2>
     implementation 'com.jakewharton:butterknife:8.8.0'
